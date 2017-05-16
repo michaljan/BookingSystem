@@ -18,7 +18,7 @@ class AppKernel extends Kernel
             //new AppBundle\AppBundle(),
             new BookingSystemBundle\BookingSystemBundle(),
             new FOS\UserBundle\FOSUserBundle(),
-            
+            new Knp\Bundle\MenuBundle\KnpMenuBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'), true)) {
