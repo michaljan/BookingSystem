@@ -76,4 +76,9 @@ fos_user:
         sender_name: "%mailer_user%"
     group:
         group_class: BookingSystemBundle\Entity\Group
-       
+
+assetic:
+    debug: "%kernel.debug%"
+    use_controller: false
+    filters:
+        cssrewrite: ~

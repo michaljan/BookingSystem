@@ -4,8 +4,7 @@
         {% if error %}
             <div>{{ error|trans }}</div>
         {% endif %}
-    <div class="body-login-background">
-        <div class="body-login-container">
+<div class="body-login-container">
         <form action="{{ path("fos_user_security_check") }}" method="post">
             <input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />
             <div class="form-group">
@@ -22,8 +21,7 @@
             </div>
             <input class="btn btn-default" type="submit" id="_submit" name="_submit" value="{{ 'security.login.submit'|trans }}" />
         </form>
-        </div>
-    </div>
-        
+</div>
+
     
 {% endblock %}
