@@ -4,6 +4,7 @@
         {% if error %}
             <div>{{ error|trans }}</div>
         {% endif %}
+    
 <div class="body-login-container">
         <form action="{{ path("fos_user_security_check") }}" method="post">
             <input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />
