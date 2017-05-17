@@ -23,7 +23,7 @@ class Builder implements ContainerAwareInterface {
                                 ->setAttribute('dropdown', true)
                                 ->setAttribute('icon', 'icon-user');
                     } else {
-                        $rootLevel = $em->getRepository('NTPBundle:Menu')->findOneByLevel($menuItem->getLevel());
+                        $rootLevel = $em->getRepository('BookingSystemBundle:Menu')->findOneByLevel($menuItem->getLevel());
                         //\Doctrine\Common\Util\Debug::dump($rootLevel); $menuItem->getRoute()
                         $menu[$rootLevel->getName()]->addChild($menuItem->getName(), array('route' => $menuItem->getRoute()));
                     }
