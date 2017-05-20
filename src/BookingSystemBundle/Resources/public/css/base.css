@@ -1,3 +1,10 @@
+div.body-login-background {
+    background: url("../img/wickes-logo.png") no-repeat center center;
+    background-size: 40%;  
+    height:520px;
+    width:auto;
+}
+
 div.body-login-container{
     position: absolute;
     top: 20%;
